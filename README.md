@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# React Mapa con Sidebar
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto fue creado utilizando [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Descripción del Proyecto
 
-In the project directory, you can run:
+Este proyecto implementa un mapa interactivo con capacidades de dibujo de polígonos y un panel lateral (sidebar) que muestra una lista de polígonos guardados. Los polígonos pueden ser dibujados en el mapa y almacenados en un servicio REST.
 
-### `npm start`
+## Inicio Rápido
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clona este repositorio:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   git clone https://github.com/tu-usuario/react-mapa-con-sidebar.git
+Instala las dependencias usando Yarn (o NPM):
 
-### `npm test`
+cd react-mapa-con-sidebar
+yarn install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Inicia la aplicación en modo de desarrollo:
 
-### `npm run build`
+yarn start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+La aplicación estará disponible en http://localhost:3000.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Scripts Disponibles
+En el directorio del proyecto, puedes ejecutar los siguientes scripts:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+yarn start
 
-### `npm run eject`
+Inicia la aplicación en modo de desarrollo.
+Abre http://localhost:3000 para verla en tu navegador.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+yarn test
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Lanza el corredor de pruebas en modo interactivo.
+Consulta la sección sobre ejecutar pruebas para obtener más información.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+yarn build
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Construye la aplicación para producción en el directorio build.
+La aplicación se minificará y los nombres de archivo incluirán los hashes.
+La aplicación estará lista para ser desplegada.
 
-## Learn More
+yarn eject
+Nota: ¡Esta operación es irreversible!
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Si no estás satisfecho con la herramienta de construcción y las opciones de configuración, puedes ejectar el proyecto. Esto copiará todos los archivos de configuración y dependencias transitorias directamente a tu proyecto. A partir de este punto, estás por tu cuenta.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Configuración del Backend
 
-### Code Splitting
+Este proyecto está diseñado para trabajar con un backend implementado en Laravel. Para conectar el frontend con el backend, sigue estos pasos:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Abre el archivo `src/config.js` en tu editor de código.
 
-### Analyzing the Bundle Size
+2. Busca la variable `API_BASE_URL` en este archivo.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. Asigna la URL base de tu servidor Laravel a la variable `API_BASE_URL`. Por ejemplo:
 
-### Making a Progressive Web App
+   ```javascript
+   const API_BASE_URL = 'http://localhost:8000'; 
+   // Reemplaza con la URL de tu servidor Laravel
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Asegúrate de que la URL apunte al servidor donde se ejecuta tu backend Laravel.
 
-### Advanced Configuration
+Guarda los cambios.
+Con estos pasos, el frontend ahora debería estar configurado para comunicarse con tu backend Laravel. Asegúrate de que tu servidor Laravel esté en ejecución antes de utilizar la aplicación.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Para ejecutar el backend Laravel localmente, puedes usar el siguiente comando en la carpeta de tu proyecto Laravel:
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+php artisan serve
+Consulta la documentación de Laravel para obtener más detalles sobre cómo configurar y ejecutar tu backend
