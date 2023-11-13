@@ -10,7 +10,8 @@ Este proyecto implementa un mapa interactivo con capacidades de dibujo de políg
 
 1. Clona este repositorio:
 
-   git clone https://github.com/tu-usuario/react-mapa-con-sidebar.git
+   git clone https://github.com/Ommixixo/SidectaFronted.git
+
 Instala las dependencias usando Yarn (o NPM):
 
 cd react-mapa-con-sidebar
