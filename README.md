@@ -9,40 +9,45 @@ Este proyecto implementa un mapa interactivo con capacidades de dibujo de políg
 ## Inicio Rápido
 
 1. Clona este repositorio:
-
+      ```javascript
    git clone https://github.com/Ommixixo/SidectaFronted.git
 
-Instala las dependencias usando Yarn (o NPM):
+   
+2. Instala las dependencias usando Yarn (o NPM):
 
-cd react-mapa-con-sidebar
-yarn install
+   ```javascript
+   cd react-mapa-con-sidebar
+   yarn install (npm install)
 
-Inicia la aplicación en modo de desarrollo:
 
-yarn start
+3. Inicia la aplicación en modo de desarrollo:
+
+   ```javascript
+   yarn start
 
 La aplicación estará disponible en http://localhost:3000.
 
 Scripts Disponibles
 En el directorio del proyecto, puedes ejecutar los siguientes scripts:
 
-yarn start
+   yarn start
 
 Inicia la aplicación en modo de desarrollo.
 Abre http://localhost:3000 para verla en tu navegador.
 
-yarn test
+   yarn test
 
 Lanza el corredor de pruebas en modo interactivo.
 Consulta la sección sobre ejecutar pruebas para obtener más información.
 
-yarn build
+   yarn build
 
 Construye la aplicación para producción en el directorio build.
 La aplicación se minificará y los nombres de archivo incluirán los hashes.
 La aplicación estará lista para ser desplegada.
 
-yarn eject
+   yarn eject
+
 Nota: ¡Esta operación es irreversible!
 
 Si no estás satisfecho con la herramienta de construcción y las opciones de configuración, puedes ejectar el proyecto. Esto copiará todos los archivos de configuración y dependencias transitorias directamente a tu proyecto. A partir de este punto, estás por tu cuenta.
@@ -58,15 +63,20 @@ Este proyecto está diseñado para trabajar con un backend implementado en Larav
 3. Asigna la URL base de tu servidor Laravel a la variable `API_BASE_URL`. Por ejemplo:
 
    ```javascript
-   const API_BASE_URL = 'http://localhost:8000'; 
+   const API_BASE_URL = 'http://localhost:8000'
    // Reemplaza con la URL de tu servidor Laravel
 
-Asegúrate de que la URL apunte al servidor donde se ejecuta tu backend Laravel.
+
+4. Asegúrate de que la URL apunte al servidor donde se ejecuta tu backend Laravel.
 
 Guarda los cambios.
+
 Con estos pasos, el frontend ahora debería estar configurado para comunicarse con tu backend Laravel. Asegúrate de que tu servidor Laravel esté en ejecución antes de utilizar la aplicación.
 
 Para ejecutar el backend Laravel localmente, puedes usar el siguiente comando en la carpeta de tu proyecto Laravel:
 
-php artisan serve
+   ```javascript
+   php artisan serve
+   // Reemplaza con la URL de tu servidor Laravel
+
 Consulta la documentación de Laravel para obtener más detalles sobre cómo configurar y ejecutar tu backend
